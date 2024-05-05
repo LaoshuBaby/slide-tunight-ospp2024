@@ -75,6 +75,44 @@
     During this project, there will be collaboration with the OSMChina community on interaction and functionality.
 \end{frame}
 
+\section{项目产出要求}
+
+\begin{frame}
+    \begin{enumerate}
+        \item 能够在编辑器内添加站点并创建线路关系（关系内成员顺序可变）或删除关系并通过OSM API 0.6上传。\\
+        Ability to add stations and create or delete route relationships (with variable member order) within the editor and upload them via OSM API 0.6.
+        \item 能在只有站点数据的情况下，根据图幅中路网和控制点自动计算可行的经由，和基于前述经由自动切割较长的路径以便于添加关系。\\
+        Ability to automatically calculate viable routes based on the road network and control points in the map, and automatically split longer paths for easier relationship addition, when only station data is available.
+        \item 需实现至少包含主要功能的原型。\\
+        Implementation of at least a prototype containing the main functionalities.
+    \end{enumerate}
+\end{frame}
+
+\section{项目技术要求}
+
+\begin{frame}
+    \begin{enumerate}
+        \item 能够使用前端技术栈开发具有复杂界面的跨平台程序，对WebGL有了解。（有用过Cesium.js/MapboxGL等WebGL的GIS框架属于加分项）\\
+        Ability to use front-end technology stack to develop complex interface cross-platform programs, with knowledge of WebGL. (Experience with WebGL GIS frameworks such as Cesium.js/MapboxGL is a plus)
+        \item 有一定算法能力，对导航算法的实现有一定的了解。（有用过开源的导航路由工具如OSRM、Graphhopper、Valhalla等属于加分项。）\\
+        Adequate algorithmic skills, with some understanding of navigation algorithm implementation. (Experience with open-source navigation routing tools like OSRM, Graphhopper, Valhalla, etc., is a plus.)
+        \item 对OpenStreetMap的数据模型和API有所了解。（对社区文化和协作方式有了解或曾使用过相关数据进行分析等利用可视为加分项）\\
+        Understanding of the OpenStreetMap data model and API. (Knowledge of community culture and collaboration methods, or previous use of related data for analysis or other purposes, is very important.)
+        \item （可能还需要一定的图形学和WASM知识，视最终技术栈选择而定。）\\
+        (Depending on the final choice of technology stack, knowledge of graphics and WASM might be required.)
+    \end{enumerate}
+\end{frame}
+
+
+\section{相关的开源软件仓库列表}
+
+\begin{frame}
+    \begin{enumerate}
+        \item https://github.com/openstreetmap/iD (关系编辑能力不强)
+        \item https://github.com/JOSM/pt_assistant (不能独立于JOSM使用，较笨重)
+        \item https://github.com/Zaczero/osm-relatify (一个偏实验性的编辑器原型，不适合大量编辑)
+    \end{enumerate}
+\end{frame}
 
 \section{研究现状}
 
