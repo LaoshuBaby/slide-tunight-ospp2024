@@ -7,8 +7,8 @@
 \usepackage{graphicx,pstricks,listings,stackengine}
 
 \author{快乐的老鼠宝宝}
-\title{基于前端技术栈的 OpenStreetMap 中公共交通关系编辑器}
-\subtitle{Frontend technology based OpenStreetMap public transportation relation editor}
+\title{基于前端技术栈的\\ OpenStreetMap 中公共交通关系编辑器}
+\subtitle{Frontend technology based OpenStreetMap PT relation editor}
 \institute{OSMChina}
 \date{2024年5月11日}
 \usepackage{Tsinghua}
@@ -52,11 +52,11 @@
 \section{项目基础信息}
 
 \begin{frame}
-    \begin{enumerate}
+    \begin{itemize}
         \item 项目难度: 进阶 / Medium
         \item 项目社区导师：快乐的老鼠宝宝 / LaoshuBaby
-        \item 导师联系方式：\email{me@jacksonzhao.email}
-    \end{enumerate}
+        \item 导师联系方式：\href{mailto:me@jacksonzhao.email}{me@jacksonzhao.email}
+    \end{itemize}
 \end{frame}
 
 \section{项目描述}
@@ -66,25 +66,32 @@
     \quad \quad 其数据模型对于公共交通等现实中抽象要素采用的关系描述方式较为复杂，OSM基金会从2016年至今每年都往GSOC提交公共交通相关的项目，但是成果和具有技术债的工具链关系密切，可用性不强。\\
     \quad \quad 本项目旨在以现代化的前端技术栈，实现一个可跨平台使用且操作简单交互明了的编辑器。\\
     \quad \quad 本项目过程中在交互和功能性上会与OSM中国社区合作。
-    \\
+\end{frame}
+
+\begin{frame}
     \quad \quad OpenStreetMap is a map project initiated in 2004 by Steve Coast of the UK, based on the principle of knowledge openness. 
-    Its data model employs a complex method of describing relationships for abstract elements in reality, such as public transport. 
-    Since 2016, the OSM Foundation has submitted projects related to public transport to GSOC annually, 
-    but the outcomes are closely tied to a technically indebted toolchain, resulting in poor usability. 
-    This project aims to develop a cross-platform editor using a modern front-end technology stack, which is easy to use with clear interactions. 
-    During this project, there will be collaboration with the OSMChina community on interaction and functionality.
+    Its data model employs a complex method of describing relationships for abstract elements in reality, such as public transport. \\
+    \quad \quad Since 2016, the OSM Foundation has submitted projects related to public transport to GSOC annually, 
+    but the outcomes are closely tied to a technically indebted toolchain, resulting in poor usability. \\
+    \quad \quad This project aims to develop a cross-platform editor using a modern front-end technology stack, which is easy to use with clear interactions. \\
+    \quad \quad During this project, there will be collaboration with the OSMChina community on interaction and functionality.
 \end{frame}
 
 \section{项目产出要求}
 
 \begin{frame}
     \begin{enumerate}
-        \item 能够在编辑器内添加站点并创建线路关系（关系内成员顺序可变）或删除关系并通过OSM API 0.6上传。\\
-        Ability to add stations and create or delete route relationships (with variable member order) within the editor and upload them via OSM API 0.6.
-        \item 能在只有站点数据的情况下，根据图幅中路网和控制点自动计算可行的经由，和基于前述经由自动切割较长的路径以便于添加关系。\\
-        Ability to automatically calculate viable routes based on the road network and control points in the map, and automatically split longer paths for easier relationship addition, when only station data is available.
-        \item 需实现至少包含主要功能的原型。\\
-        Implementation of at least a prototype containing the main functionalities.
+        \item 能够在编辑器内添加站点并创建线路关系（关系内成员顺序可变）或删除关系并通过OSM API 0.6上传。
+        \item 能在只有站点数据的情况下，根据图幅中路网和控制点自动计算可行的经由，和基于前述经由自动切割较长的路径以便于添加关系。
+        \item 需实现至少包含主要功能的原型。
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \begin{enumerate}
+        \item Ability to add stations and create or delete route relationships (with variable member order) within the editor and upload them via OSM API 0.6.
+        \item Ability to automatically calculate viable routes based on the road network and control points in the map, and automatically split longer paths for easier relationship addition, when only station data is available.
+        \item Implementation of at least a prototype containing the main functionalities.
     \end{enumerate}
 \end{frame}
 
@@ -92,14 +99,19 @@
 
 \begin{frame}
     \begin{enumerate}
-        \item 能够使用前端技术栈开发具有复杂界面的跨平台程序，对WebGL有了解。（有用过Cesium.js/MapboxGL等WebGL的GIS框架属于加分项）\\
-        Ability to use front-end technology stack to develop complex interface cross-platform programs, with knowledge of WebGL. (Experience with WebGL GIS frameworks such as Cesium.js/MapboxGL is a plus)
-        \item 有一定算法能力，对导航算法的实现有一定的了解。（有用过开源的导航路由工具如OSRM、Graphhopper、Valhalla等属于加分项。）\\
-        Adequate algorithmic skills, with some understanding of navigation algorithm implementation. (Experience with open-source navigation routing tools like OSRM, Graphhopper, Valhalla, etc., is a plus.)
-        \item 对OpenStreetMap的数据模型和API有所了解。（对社区文化和协作方式有了解或曾使用过相关数据进行分析等利用可视为加分项）\\
-        Understanding of the OpenStreetMap data model and API. (Knowledge of community culture and collaboration methods, or previous use of related data for analysis or other purposes, is very important.)
-        \item （可能还需要一定的图形学和WASM知识，视最终技术栈选择而定。）\\
-        (Depending on the final choice of technology stack, knowledge of graphics and WASM might be required.)
+        \item 能够使用前端技术栈开发具有复杂界面的跨平台程序，对WebGL有了解。（有用过Cesium.js/MapboxGL等WebGL的GIS框架属于加分项）
+        \item 有一定算法能力，对导航算法的实现有一定的了解。（有用过开源的导航路由工具如OSRM、Graphhopper、Valhalla等属于加分项。）
+        \item 对OpenStreetMap的数据模型和API有所了解。（对社区文化和协作方式有了解或曾使用过相关数据进行分析等利用可视为加分项）
+        \item （可能还需要一定的图形学和WASM知识，视最终技术栈选择而定。）
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \begin{enumerate}
+        \item Ability to use front-end technology stack to develop complex interface cross-platform programs, with knowledge of WebGL. (Experience with WebGL GIS frameworks such as Cesium.js/MapboxGL is a plus)
+        \item Adequate algorithmic skills, with some understanding of navigation algorithm implementation. (Experience with open-source navigation routing tools like OSRM, Graphhopper, Valhalla, etc., is a plus.)
+        \item Understanding of the OpenStreetMap data model and API. (Knowledge of community culture and collaboration methods, or previous use of related data for analysis or other purposes, is very important.)
+        \item (Depending on the final choice of technology stack, knowledge of graphics and WASM might be required.)
     \end{enumerate}
 \end{frame}
 
@@ -108,40 +120,21 @@
 
 \begin{frame}
     \begin{enumerate}
-        \item https://github.com/openstreetmap/iD (关系编辑能力不强)
-        \item https://github.com/JOSM/pt_assistant (不能独立于JOSM使用，较笨重)
-        \item https://github.com/Zaczero/osm-relatify (一个偏实验性的编辑器原型，不适合大量编辑)
+        \item \url{https://github.com/openstreetmap/iD} \\
+        (关系编辑能力不强)
+        \item \url{https://github.com/JOSM/pt_assistant} \\
+        (不能独立于JOSM使用，较笨重)
+        \item \url{https://github.com/Zaczero/osm-relatify} \\
+        (一个偏实验性的编辑器原型，不适合大量编辑)
     \end{enumerate}
+    \begin{figure}[htpb]
+        \centering
+        \includegraphics[width=0.2\linewidth]{figure/tuna.pdf}
+        \caption{这个校徽就是矢量图}
+    \end{figure}
 \end{frame}
 
 \section{研究现状}
-
-\subsection{Beamer主题分类}
-
-\begin{frame}
-    \begin{itemize}
-        \item 有一些 \LaTeX{} 自带的
-        \item 有一些Tsinghua的
-        \item 本模板来源自 \newline \url{https://www.latexstudio.net/archives/4051.html}
-        \item 但是最初的 \href{http://far.tooold.cn/post/latex/beamertsinghua}{\color{purple}{link}} \cite{origin}已经失效了
-        \item 这是我在16-17年做的一些ppt：\href{https://github.com/Trinkle23897/oi_slides}{\color{purple}{戳我}}
-    \end{itemize}
-\end{frame}
-
-
-\section{研究内容}
-
-\subsection{美化主题}
-
-\begin{frame}{这一份主题与原始的THU Beamer Theme区别在于}
-    \begin{itemize}
-        \item 顶栏的小点变成一行而不是多行
-        \item 中文采用楷书
-        \item 剩下我改了啥我也忘了……我16年魔改的，都四年过去了（x
-        \item 更多该模板的功能可以参考 \url{https://www.latexstudio.net/archives/4051.html}
-        \item 下面列举出了一些Beamer的用法，部分节选自 \url{https://tuna.moe/event/2018/latex/}
-    \end{itemize}
-\end{frame}
 
 \subsection{如何更好地做Beamer}
 
@@ -306,38 +299,6 @@
     \end{minipage}
 \end{frame}
 
-\begin{frame}[fragile]{\LaTeX{} 数学公式}
-    \begin{columns}
-        \begin{column}{.55\textwidth}
-\begin{lstlisting}[language=TeX]
-$V = \frac{4}{3}\pi r^3$
-
-\[
-  V = \frac{4}{3}\pi r^3
-\]
-
-\begin{equation}
-  \label{eq:vsphere}
-  V = \frac{4}{3}\pi r^3
-\end{equation}
-\end{lstlisting}
-        \end{column}
-        \begin{column}{.4\textwidth}
-            $V = \frac{4}{3}\pi r^3$
-            \[
-                V = \frac{4}{3}\pi r^3
-            \]
-            \begin{equation}
-                \label{eq:vsphere}
-                V = \frac{4}{3}\pi r^3
-            \end{equation}
-        \end{column}
-    \end{columns}
-    \begin{itemize}
-        \item 更多内容请看 \href{https://zh.wikipedia.org/wiki/Help:数学公式}{\color{purple}{这里}}
-    \end{itemize}
-\end{frame}
-
 \begin{frame}[fragile]
     \begin{columns}
         \column{.6\textwidth}
@@ -374,25 +335,11 @@ $V = \frac{4}{3}\pi r^3$
     \end{columns}
 \end{frame}
 
-\begin{frame}{作图}
-    \begin{itemize}
-        \item 矢量图 eps, ps, pdf
-        \begin{itemize}
-            \item METAPOST, pstricks, pgf $\ldots$
-            \item Xfig, Dia, Visio, Inkscape $\ldots$
-            \item Matlab / Excel 等保存为 pdf
-        \end{itemize}
-        \item 标量图 png, jpg, tiff $\ldots$
-        \begin{itemize}
-            \item 提高清晰度，避免发虚
-            \item 应尽量避免使用
-        \end{itemize}
-    \end{itemize}
-    \begin{figure}[htpb]
-        \centering
-        \includegraphics[width=0.2\linewidth]{figure/tuna.pdf}
-        \caption{这个校徽就是矢量图}
-    \end{figure}
+
+\section{吐槽}
+
+\begin{frame}
+    我一个后端佬，怎么就来带前端项目了呢？所以说一个人的定位，不仅要看，也要……
 \end{frame}
 
 
