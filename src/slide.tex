@@ -33,7 +33,6 @@
     frame=shadowbox,
 }
 
-
 \begin{document}
 
 \kaishu
@@ -59,7 +58,8 @@
         \item 导师联系方式：\href{mailto:me@jacksonzhao.email}{me@jacksonzhao.email}
     \end{itemize}
     \vspace{1.5em}
-    $Ciallo\textasciitilde{}(\(\angle\cdot\omega<\))\textasciicircum{}\star$
+    % $Ciallo\textasciitilde{}(\(\angle\cdot\omega<\))\textasciicircum{}\star$
+    $ Ciallo\text{～}(\angle\cdot\omega< )\text{⌒}\star $
 \end{frame}
 
 \subsection{项目描述}
@@ -122,6 +122,9 @@
 \subsection{相关的开源软件仓库列表}
 
 \begin{frame}
+
+    \quad \quad 现在能编辑公共交通的编辑器确实不少，但是各自都有自己的特点和\textbf{痛点}
+
     \begin{enumerate}
         \item \url{https://github.com/openstreetmap/iD} \\
         (关系编辑能力不强)
@@ -136,26 +139,23 @@
 
 \begin{frame}
     \Large
-    天天总是在各种地图看到公交线路，你有没有好奇过，它在地图上是用怎样的形式去存储的？
+    \quad \quad 天天总是在各种地图看到公交线路，你有没有好奇过，它在地图上是用怎样的形式去存储的？
 \end{frame}
 
 \begin{frame}
 	\begin{figure}[htpb]
 		\centering
-		\includegraphics[width=1.15\linewidth]{figure/map_example-baidu-webbus.png}
+		\includegraphics[width=1.05\linewidth]{figure/map_example-baidu-webbus.png}
 	\end{figure}
 \end{frame}
 
 \begin{frame}
     \begin{columns}
         \column{0.5\textwidth}
-        \begin{block}{}
-            \includegraphics[width=0.7\linewidth]{figure/map_example-tencent-detail.jpg}
-        \end{block}
+        \includegraphics[width=0.7\linewidth]{figure/map_example-tencent-detail.jpg}
+        
         \column{0.5\textwidth}
-        \begin{block}{}
-            \includegraphics[width=0.7\linewidth]{figure/map_example-tencentbus.jpg}
-        \end{block}
+        \includegraphics[width=0.7\linewidth]{figure/map_example-tencentbus.jpg}
     \end{columns}
 \end{frame}
 
@@ -192,7 +192,6 @@
     \Large
     所以实际上绘制线路的流程是啥样的？
 \end{frame}
-
 
 \begin{frame}
     \begin{figure}[htpb]
@@ -264,17 +263,15 @@
 \section{或许需要剖析一下需要怎么做}
 
 \begin{frame}
-    前端技术方面的讨论，我建议去看看RapiD的那个演讲吧。\\
-    Youtube有自动字幕，我也提供一个vtt对照翻译。英语好的同学想练习一下听力也是没问题的。 \\
-    
-
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.7\textwidth]{figure/youtube-Kn7qusvEynU.jpg}
+        \includegraphics[width=0.65\textwidth]{figure/youtube-Kn7qusvEynU.jpg}
         \caption{What's new with the RapiD Editor - Bryan Housel \& Ben Clark}
     \end{figure}
 
-    \url{https://m.youtube.com/watch?v=Kn7qusvEynU}
+    \quad \quad 前端技术方面的讨论，我建议去看看RapiD的那个演讲吧。\\
+    \quad \quad Youtube有自动字幕，我也提供一个vtt对照翻译。英语好的同学想练习一下听力也是没问题的。 \\
+    \quad \quad \url{https://m.youtube.com/watch?v=Kn7qusvEynU}
 \end{frame}
 
 \section{吐槽和\sout{梦中不可能之事}}
@@ -327,6 +324,11 @@
     \quad \quad 所以放宽心的，我们只需要实现最基本的公交路线关系编辑就可以 \\
     \quad \quad 很多功能都可以砍，都可以讨价还价（笑）\\
     \quad \quad 主要在于你有没有\textbf{想上手搞出这样一个工具的勇气}
+\end{frame}
+
+\begin{frame}
+    \Huge
+    规则，就是用来打破的！
 \end{frame}
 
 \section{计划进度}
