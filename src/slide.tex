@@ -132,27 +132,6 @@
     \end{enumerate}
 \end{frame}
 
-\begin{frame}{\sout{锐评})
-    \begin{figure}[htpb]
-        \centering
-        \includegraphics[width=0.2\linewidth]{figure/editor-iD.png}
-        \caption{iD 编辑器中编辑公共交通线路的界面示例}
-    \end{figure}
-    iD 编辑器是网页默认的编辑器，但是\\
-
-    \quad \quad 但是它调整起关系里面成员顺序的时候体验非常糟糕，你需要一个一个的拖拽上去，然后这个列表挪动的非常缓慢，并且难以在一屏内简单的看清所有成员，也不便于快速跳转到其他成员。\\
-    \quad \quad 更致命的是，iD 编辑器内同时只能选中一个元素（Element，可以是Node、Way、Relation），你选择了成员的时候就会放弃对关系的选择，必须层层迭代去选中一个关系而难以稳定的直接选中。它默认不会提供一个索引。
-\end{frame}
-
-\begin{frame}{\sout{锐评})
-    \begin{figure}[htpb]
-        \centering
-        \includegraphics[width=0.2\linewidth]{figure/editor-iD.png}
-        \caption{iD 编辑器中编辑公共交通线路的界面示例}
-    \end{figure}
-    JOSM 编辑器是一个历史悠久的编辑器（甚至可能比在座一些同学的年龄都大），但是\\
-\end{frame}
-
 \section{线路是如何被绘制的}
 
 \begin{frame}
@@ -169,11 +148,36 @@
     手机上其他软件的一张
 \end{frame}
 
-% \section{现在的生态是怎样的}
+\begin{frame}{现在的编辑器生态是怎样的}
+    那如果我希望用OSM生态的编辑器去画一条公交线路呢？
+\end{frame}
 
-% \begin{frame}
-%     Video：播放一段视频实际演示绘制一条公交线路有多麻烦（iD/JOSM）
-% \end{frame}
+\begin{frame}{\sout{锐评}}
+    \begin{figure}[htpb]
+        \centering
+        \includegraphics[width=0.5\linewidth]{figure/editor-iD.png}
+        \caption{iD 编辑器中编辑公共交通线路的界面示例}
+    \end{figure}
+    \quad \quad iD 编辑器是网页默认的编辑器，但是……
+\end{frame}
+
+\begin{frame}
+    \quad \quad 但是它调整起关系里面成员顺序的时候体验非常糟糕，你需要一个一个的拖拽上去，然后这个列表挪动的非常缓慢，并且难以在一屏内简单的看清所有成员，也不便于快速跳转到其他成员。\\
+    \quad \quad 更致命的是，iD 编辑器内同时只能选中一个元素（Element，可以是Node、Way、Relation），你选择了成员的时候就会放弃对关系的选择，必须层层迭代去选中一个关系而难以稳定的直接选中。它默认不会提供一个索引。
+\end{frame}
+
+\begin{frame}{\sout{锐评}}
+    \begin{figure}[htpb]
+        \centering
+        \includegraphics[width=0.4\linewidth]{figure/editor-JOSM.png}
+        \caption{JOSM 中编辑公共交通线路的界面示例}
+    \end{figure}
+    \quad \quad JOSM 编辑器是一个历史悠久的编辑器（甚至可能比在座一些同学的年龄都大）\\
+    \quad \quad 但是功能确实繁琐，操作体验也不是很好，插件打多了就能体验到Java的图形性能了。
+\end{frame}
+
+
+
 
 
 \section{或许需要剖析一下需要怎么做}
