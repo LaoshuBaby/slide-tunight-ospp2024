@@ -5,7 +5,7 @@
 % other packages
 \usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
 \usepackage{graphicx,pstricks,listings,stackengine}
-\usepackage{ruby,ulem}
+\usepackage{ruby,ulem,multirow}
 
 \author{银河球棒侠}
 \title{基于前端技术栈的\\ OpenStreetMap 中公共交通关系编辑器}
@@ -135,21 +135,33 @@
 \section{线路是如何被绘制的}
 
 \begin{frame}
-    % \centering
-    % \HUGE
     \Large
     天天总是在各种地图看到公交线路，你有没有好奇过，它在地图上是用怎样的形式去存储的？
 \end{frame}
 
 \begin{frame}
+	\begin{figure}[htpb]
+		\centering
+		\includegraphics[width=1.15\linewidth]{figure/map_example-baidu-webbus.png}
+	\end{figure}
+\end{frame}
 
-    百度地图 网页版 截图一张
-
-    手机上其他软件的一张
+\begin{frame}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \begin{block}{}
+            \includegraphics[width=0.7\linewidth]{figure/map_example-tencent-detail.jpg}
+        \end{block}
+        \column{0.5\textwidth}
+        \begin{block}{}
+            \includegraphics[width=0.7\linewidth]{figure/map_example-tencentbus.jpg}
+        \end{block}
+    \end{columns}
 \end{frame}
 
 \begin{frame}{现在的编辑器生态是怎样的}
-    那如果我希望用OSM生态的编辑器去画一条公交线路呢？
+    \Large
+    \quad \quad 那如果我希望用OSM生态的编辑器去画一条公交线路呢？
 \end{frame}
 
 \begin{frame}{\sout{锐评}}
