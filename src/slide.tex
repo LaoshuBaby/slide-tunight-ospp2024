@@ -5,7 +5,7 @@
 % other packages
 \usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
 \usepackage{graphicx,pstricks,listings,stackengine}
-\usepackage{ruby,ulem,multirow}
+\usepackage{ruby,ulem}
 
 \author{银河球棒侠}
 \title{基于前端技术栈的\\ OpenStreetMap 中公共交通关系编辑器}
@@ -274,6 +274,30 @@
     \quad \quad \url{https://m.youtube.com/watch?v=Kn7qusvEynU}
 \end{frame}
 
+\begin{frame}
+    Q:我怎么知道我画的对不对？规范不规范？\\
+
+    A:好问题，有个东西叫做PTv2，它是一个OSM中描述与约束公共交通关系中各类标签和关系成员角色的规范。\\
+    但是大家也都知道OSM很少有具有绝对强制力的文档，所以除了PTv2以外PTv1和一切其他schema也都有在用（但我们肯定期望你按PTv2来对吧）\\
+
+    Q:那么，我怎么知道我画的符合不符合PTv2？\\
+
+    A:有一个Geofabrik推出的检查器可以用红绿颜色来直观的可视化一个城市内符合PTv2的线路的数量。这里我们给出一些城市的可视化截图。
+\end{frame}
+
+\begin{frame}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \includegraphics[width=1\linewidth]{figure/ptv2-beijing.png}
+        \vspace{1em}
+        \includegraphics[width=1\linewidth]{figure/ptv2-berlin.png}
+        \column{0.5\textwidth}
+        \includegraphics[width=1\linewidth]{figure/ptv2-jinan.png}
+        \vspace{1em}
+        \includegraphics[width=1\linewidth]{figure/ptv2-shanghai.png}
+    \end{columns}
+\end{frame}
+
 \section{吐槽和\sout{梦中不可能之事}}
 
 \begin{frame}
@@ -338,7 +362,7 @@
     \quad \quad 所以如果想参赛，强烈建议描述你印象中最少的功能会主要由什么构成，并且尽量优先去实现。\\
 
     \quad \quad 另一个限制因素是我在五月下旬和整个六月都会非常忙
-    \sout{（零分，下一个！负分，滚出去！）}\\
+    \sout{\small （零分，下一个！负分，滚出去！）}\\
 
     \quad \quad 当然等开工以后，我会尽量做到每周和你\ruby{探讨进度}{\footnotesize Push \& PUA}一次甚至两次的 UwU！
 \end{frame}
