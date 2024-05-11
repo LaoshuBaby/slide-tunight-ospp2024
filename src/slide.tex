@@ -58,6 +58,8 @@
         \item 项目社区导师：快乐的老鼠宝宝 / LaoshuBaby
         \item 导师联系方式：\href{mailto:me@jacksonzhao.email}{me@jacksonzhao.email}
     \end{itemize}
+    \vspace{1.5em}
+    $Ciallo\textasciitilde{}(\(\angle\cdot\omega<\))\textasciicircum{}\star$
 \end{frame}
 
 \subsection{项目描述}
@@ -101,7 +103,7 @@
 \begin{frame}
     \begin{enumerate}
         \item 能够使用前端技术栈开发具有复杂界面的跨平台程序，对WebGL有了解。（有用过Cesium.js/MapboxGL等WebGL的GIS框架属于加分项）
-        \footnote{（可能还需要一定的图形学和WASM知识，视最终技术栈选择而定。）}
+        \footnote{可能还需要一定的图形学和WASM知识\\（视最终技术栈选择而定。）}
         \item 有一定算法能力，对导航算法的实现有一定的了解。（有用过开源的导航路由工具如OSRM、Graphhopper、Valhalla等属于加分项。）
         \item 对OpenStreetMap的数据模型和API有所了解。（对社区文化和协作方式有了解或曾使用过相关数据进行分析等利用可视为加分项）
     \end{enumerate}
@@ -128,11 +130,27 @@
         \item \url{https://github.com/Zaczero/osm-relatify} \\
         (一个偏实验性的编辑器原型，不适合大量编辑)
     \end{enumerate}
+\end{frame}
+
+\begin{frame}{\sout{锐评})
     \begin{figure}[htpb]
         \centering
         \includegraphics[width=0.2\linewidth]{figure/editor-iD.png}
         \caption{iD 编辑器中编辑公共交通线路的界面示例}
     \end{figure}
+    iD 编辑器是网页默认的编辑器，但是\\
+
+    \quad \quad 但是它调整起关系里面成员顺序的时候体验非常糟糕，你需要一个一个的拖拽上去，然后这个列表挪动的非常缓慢，并且难以在一屏内简单的看清所有成员，也不便于快速跳转到其他成员。\\
+    \quad \quad 更致命的是，iD 编辑器内同时只能选中一个元素（Element，可以是Node、Way、Relation），你选择了成员的时候就会放弃对关系的选择，必须层层迭代去选中一个关系而难以稳定的直接选中。它默认不会提供一个索引。
+\end{frame}
+
+\begin{frame}{\sout{锐评})
+    \begin{figure}[htpb]
+        \centering
+        \includegraphics[width=0.2\linewidth]{figure/editor-iD.png}
+        \caption{iD 编辑器中编辑公共交通线路的界面示例}
+    \end{figure}
+    JOSM 编辑器是一个历史悠久的编辑器（甚至可能比在座一些同学的年龄都大），但是\\
 \end{frame}
 
 \section{线路是如何被绘制的}
@@ -174,7 +192,7 @@
     \url{https://m.youtube.com/watch?v=Kn7qusvEynU}
 \end{frame}
 
-\section{吐槽}
+\section{吐槽和\sout{梦中不可能之事}}
 
 \begin{frame}
     \Large
@@ -184,11 +202,9 @@
 
 \begin{frame}
     \large
-    首先我们知道，这个项目肯定会是一个持久的工程，不可能在本次OSPP期间全部完成。\\
-    \par
-    \par
-    \par
-    “就一个编辑器就工作量这么大的吗？”
+    \quad \quad 首先我们知道，这个项目肯定会是一个持久的工程，不可能在本次OSPP期间全部完成。\\
+    \vspace{4em}
+    \quad \quad \textbf{“就一个编辑器就工作量这么大的吗？”}
 \end{frame}
 
 
@@ -223,31 +239,21 @@
     \Large
     好，看起来头已经开始大了吧 \\
     \large
-    所以放宽心的，我们只需要实现最基本的公交路线关系编辑就可以 \\
-    很多功能都可以砍，都可以讨价还价（笑）\\
-    主要在于你有没有{\bfseries 想上手搞出这样一个工具的勇气}
+    \quad \quad 所以放宽心的，我们只需要实现最基本的公交路线关系编辑就可以 \\
+    \quad \quad 很多功能都可以砍，都可以讨价还价（笑）\\
+    \quad \quad 主要在于你有没有\textbf{想上手搞出这样一个工具的勇气}
 \end{frame}
 
 \section{计划进度}
 \begin{frame}
-    一共就七月到九月，时间还是很紧张的，感觉是真的做不完 \\
+    \quad \quad 一共就七月到九月，时间还是很紧张的，感觉上是真的做不完吧（笑） \\
     
-    所以如果想参赛，强烈建议描述你印象中最少的功能会主要由什么构成，并且尽量优先去实现。\\
+    \quad \quad 所以如果想参赛，强烈建议描述你印象中最少的功能会主要由什么构成，并且尽量优先去实现。\\
 
-    另一个限制因素是我在五月下旬和整个六月都会非常忙
+    \quad \quad 另一个限制因素是我在五月下旬和整个六月都会非常忙
     \sout{（零分，下一个！负分，滚出去！）}\\
 
-    当然等开工以后，我会尽量做到每周和你\ruby{探讨进度}{\small Push \& PUA}一次甚至两次的 UwU！
-\end{frame}
-
-
-\section{参考文献}
-
-\begin{frame}[allowframebreaks]
-    \bibliography{ref}
-    \bibliographystyle{alpha}
-    % 如果参考文献太多的话，可以像下面这样调整字体：
-    % \tiny\bibliographystyle{alpha}
+    \quad \quad 当然等开工以后，我会尽量做到每周和你\ruby{探讨进度}{\footnotesize Push \& PUA}一次甚至两次的 UwU！
 \end{frame}
 
 \begin{frame}
